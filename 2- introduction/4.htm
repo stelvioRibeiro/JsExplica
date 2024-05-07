@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducton - HIDE AND SHOW HTML Elements</title>
+</head>
+
+<body>
+
+    <h2>What can JavaScript Do?</h2>
+    <p id="demo">JavaScript can hide HTML elements.</p>
+
+
+    <div id="buttonHide">
+        <button type="button" onclick="document.getElementById('demo').innerText = 'JavaScript can hide HTML elements.';
+        document.getElementById('demo').style.display = 'none'; 
+        document.getElementById('buttonShow').style.display = 'block';
+        document.getElementById('buttonHide').style.display = 'none'">Hide</button>
+    </div>
+
+    <div id="buttonShow" style="display: none;">
+
+       <button type="button" onclick="document.getElementById('demo').innerText = 'JavaScript can show HTML elements.';
+       document.getElementById('demo').style.display = 'block';
+       document.getElementById('buttonHide').style.display= 'block';
+       document.getElementById('buttonShow').style.display = 'none'">SHOW</button>
+    
+    </div>
+
+</body>
+
+</html>
